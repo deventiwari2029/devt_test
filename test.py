@@ -12,9 +12,15 @@ def hello():
 def test1():
     return "Test!!! Hello World! This is test script"
 
+
 @app.route("/test2")
 def test2():
     return "<html><head></head><body><h1 color='red'>Welcome My first page</h1></body></html>"
+
+
+@app.route("/test3")
+def test3():
+    return "<html><head></head><body><h1 color='red'>Something new</h1></body></html>"
 
 
 if __name__ == "__main__":
