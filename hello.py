@@ -9,3 +9,12 @@ def hello():
 @app.route('/test')
 def test():
     return 'Special Hello world Test!'
+
+@app.route('/mark')
+def mark():
+	lt = ['harry','ron','hermoine','rupus','neville','dumbul']
+	for i1 in lt:
+		str1 = "<h1>" + "{}".format(i1) + "</h1><br>"
+	st1 = "<html><body>cast:<br>" + str1 + "</body></html>" 
+    return st1
+
