@@ -13,8 +13,9 @@ def test():
 @app.route('/mark')
 def mark():
 	lt = ['harry','ron','hermoine','rupus','neville','dumbul']
+	str1 = ""
 	for i1 in lt:
-		str1 = "<h1>" + "{}".format(i1) + "</h1><br>"
+		str1 = str1 + "<h1>" + "{}".format(i1) + "</h1><br>"
 	st1 = "<html><body>cast:<br>" + str1 + "</body></html>" 
     return st1
 
